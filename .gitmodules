@@ -1,0 +1,3 @@
+[submodule "elements-data"]
+	path = elements-data
+	url = https://github.com/ibrahimsag/elements-data
