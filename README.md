@@ -10,11 +10,11 @@ https://user-images.githubusercontent.com/2453968/203163757-e6307b2d-5c82-4bf9-9
 
 ## How?
 
-This was possible thanks to [Ibrahim Sagiroglu's interactive rendering](https://elements.canberead.com/):
+This was possible thanks to the meticulous work performed by [Ibrahim Sagiroglu](https://twitter.com/ratherthanpaper) in [his own browser-based interactive rendering](https://elements.canberead.com/):
 
-- [Sagiroglu's machine readable source](https://github.com/ibrahimsag/canberead) provided all the geometry and proposition information.
-- Animations were auto-generated using the math animation library [Manim](https://manim.community).
-- Voiceovers were also auto-generated using AI with the [Manim Voiceover](https://voiceover.manim.community) plugin (also authored by me).
+- [Sagiroglu's machine readable source](https://github.com/ibrahimsag/canberead) provides all the geometry and proposition information.
+- Animations are auto-generated using the math animation library [Manim](https://manim.community).
+- Voiceovers are also auto-generated using AI with the [Manim Voiceover](https://voiceover.manim.community) plugin (also authored by me).
 
 Another example that is in 3d:
 
