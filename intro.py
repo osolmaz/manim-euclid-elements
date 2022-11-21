@@ -20,7 +20,7 @@ class Introduction(VoiceoverScene):
         # self.add_sound("audio/1-second-of-silence.mp3")
         text1 = Tex("Euclid's Elements", font_size=72)
         text2 = Tex("A Video Rendering", font_size=48)
-        text3 = Tex("version 0.0.2", font_size=24).align_on_border(DR)
+        text3 = Tex("version 0.1.0", font_size=24).align_on_border(DR)
         VGroup(text1, text2).arrange(DOWN, buff=1)
         with self.voiceover(text="Euclid's Elements") as tracker:
             self.play(Write(text1), run_time=2)
@@ -82,4 +82,4 @@ class Introduction(VoiceoverScene):
         self.wait()
 
 
-Introduction.__name__ = "00-01"
+Introduction.__name__ = "00-001"

@@ -5,7 +5,7 @@ description = "A video rendering of Euclid's Elements using Manim"
 authors = ["Your Name <you@example.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "manim_euclid_elements"}]
+# packages = [{include = "manim_euclid_elements"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"

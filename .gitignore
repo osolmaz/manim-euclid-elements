@@ -9,3 +9,4 @@ media/
 scratch/
 *.mp4
 tmp/
+render.log
