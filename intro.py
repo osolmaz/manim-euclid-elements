@@ -1,7 +1,7 @@
 from ctypes import alignment
 from manim import *
 from manim_voiceover import VoiceoverScene
-from manim_voiceover.interfaces.azure import AzureSpeechSynthesizer
+from manim_voiceover.services.azure import AzureService
 
 LEFT_EDGE = -5.5
 LINE_SPACING = 0.75
@@ -9,8 +9,8 @@ LINE_SPACING = 0.75
 class Introduction(VoiceoverScene):
     def construct(self):
 
-        self.set_speech_synthesizer(
-            AzureSpeechSynthesizer(
+        self.set_speech_service(
+            AzureService(
                 voice="en-US-AriaNeural",
                 style="newscast-casual",
             ),
@@ -20,7 +20,7 @@ class Introduction(VoiceoverScene):
         # self.add_sound("audio/1-second-of-silence.mp3")
         text1 = Tex("Euclid's Elements", font_size=72)
         text2 = Tex("A Video Rendering", font_size=48)
-        text3 = Tex("version 0.0.2", font_size=24).align_on_border(DR)
+        text3 = Tex("version 0.1.0", font_size=24).align_on_border(DR)
         VGroup(text1, text2).arrange(DOWN, buff=1)
         with self.voiceover(text="Euclid's Elements") as tracker:
             self.play(Write(text1), run_time=2)
@@ -82,4 +82,4 @@ class Introduction(VoiceoverScene):
         self.wait()
 
 
-Introduction.__name__ = "00-01"
+Introduction.__name__ = "00-001"
