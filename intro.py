@@ -1,7 +1,7 @@
 from ctypes import alignment
 from manim import *
 from manim_voiceover import VoiceoverScene
-from manim_voiceover.interfaces.azure import AzureSpeechSynthesizer
+from manim_voiceover.services.azure import AzureService
 
 LEFT_EDGE = -5.5
 LINE_SPACING = 0.75
@@ -9,8 +9,8 @@ LINE_SPACING = 0.75
 class Introduction(VoiceoverScene):
     def construct(self):
 
-        self.set_speech_synthesizer(
-            AzureSpeechSynthesizer(
+        self.set_speech_service(
+            AzureService(
                 voice="en-US-AriaNeural",
                 style="newscast-casual",
             ),

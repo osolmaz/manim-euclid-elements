@@ -3,7 +3,7 @@ import re
 import textwrap
 from manim import *
 from manim_voiceover import VoiceoverScene
-from manim_voiceover.interfaces.azure import AzureSpeechSynthesizer
+from manim_voiceover.services.azure import AzureService
 from math import atan2, floor, ceil, pi
 import json
 
@@ -570,8 +570,8 @@ def generate_scene(
 ):
     class MyScene(VoiceoverScene):
         def construct(self):
-            self.set_speech_synthesizer(
-                AzureSpeechSynthesizer(
+            self.set_speech_service(
+                AzureService(
                     voice="en-US-AriaNeural",
                     style="newscast-casual",
                     global_speed=GLOBAL_SPEED
